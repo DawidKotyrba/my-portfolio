@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.container-page {
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+}
+/* HEADER */
+
+.main-header {
+    height: 100vh;
+    background-position: center;
+    background-image: url('../img/header-bg.jpg');
+    background-size: cover;
+}
+.heder-container-flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.left-side {
+    flex-basis: 50%;
+    
+}
+.right-side {
+    flex-basis: 50%;
+}
+.right-side img{
+    width: 426px;
+}
+
+
+/* NAV */
