@@ -23,6 +23,9 @@ h1,h2,h3 {
     color: #32333c;
     text-align: center;
 }
+h2 {
+    width: 100%;
+}
 .ligray-color {
     color: #707070;
 }
@@ -62,6 +65,9 @@ h1 {
 
 
 /* NAV */
+.main-nav h2 {
+    width: auto;
+}
 .main-nav {
     z-index: 9999;
     font-weight: bold;
@@ -97,9 +103,6 @@ h1 {
 }
 
 /* SECTION ABOUT */
-.about-section h2 {
-    width: 100%;
-}
 .up-side p {
     text-align: justify;
 }
@@ -176,4 +179,16 @@ h1 {
 }
 .intrest-section .right-side h3{
     width: 100%;
+}
+/* CONTACT */
+.contact-section .left-side,
+.contact-section .right-side {
+    background-color: #fff;
+    flex-basis: 40%;
+    padding: 15px 0;
+}
+.contact-section .half-container {
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 10px;
 }
