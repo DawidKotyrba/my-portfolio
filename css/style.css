@@ -192,3 +192,14 @@ h1 {
     text-align: center;
     padding-top: 10px;
 }
+/* FOOTER */
+.footer-inner {
+    height: 20vh;
+    background-color: #1c2940;
+}
+.footer-inner p {
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    line-height: 20vh;
+}
