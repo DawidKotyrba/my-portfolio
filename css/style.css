@@ -3,6 +3,9 @@ body {
     font-family: 'Lato', sans-serif;
     box-sizing: content-box;
 }
+section {
+    padding: 50px 0;
+}
 .container-page {
     width: 70%;
     margin: 0 auto;
@@ -10,6 +13,9 @@ body {
 }
 .violet-color {
     color: #754ef9;
+}
+.bg-lite-gray {
+    background-color: #fbfbfb;
 }
 h1,h2,h3 {
     font-weight: bold;
@@ -36,6 +42,7 @@ h1 {
     background-size: cover;
 }
 .half-container {
+    width: 100%;
     padding-top: 10%;
     display: flex;
     align-items: center;
@@ -56,6 +63,7 @@ h1 {
 
 /* NAV */
 .main-nav {
+    z-index: 9999;
     font-weight: bold;
     background-color: rgb(248, 248, 248);
     width: 100%;
@@ -89,31 +97,35 @@ h1 {
 }
 
 /* SECTION ABOUT */
-.about-section {
-    padding: 50px 0;
+.about-section h2 {
+    width: 100%;
 }
-.about-section .right-side {
-    flex-basis: 50%;
+.up-side p {
+    text-align: justify;
+}
+.down-side h3 {
+    flex-basis: 100%;
+}
+.down-side {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .left-side-item {
     display: flex;
     align-items: center;
 }
-.about-section .half-container {
-    align-items: flex-start;
-}
 .icons-block-container{
     display: flex;
-    flex-direction: column;
     align-items: center; 
     justify-content: space-around;
+    width: 100%;
 }
 .page-icon-block {
     position: relative;
     margin: 5px 0;
     width: 150px;
     height: 150px;
-    background-color: #7070700a;
 }
 .icon-item {
     position: absolute;
@@ -126,4 +138,31 @@ h1 {
 .icon-item .fab {
     width: 100%;
     transition: 0.3s ease-in;
+}
+/* SKILS SECTION */
+.container-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+.galery-item {
+    height: 300px;
+    flex-basis: 25%;
+    position: relative;
+}
+.galery-item h3{
+    background-color: #754ef9;
+    color: #fff;
+    margin: 0;
+    line-height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.galery-item img {
+    width: 100%;
+}
+.galery-item:hover > h3 {
+    opacity: 0.9;
 }
