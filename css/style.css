@@ -1,7 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-    box-sizing: content-box;
 }
 section {
     padding: 50px 0;
@@ -16,6 +18,9 @@ section {
 }
 .bg-lite-gray {
     background-color: #f0f0f0;
+}
+.bg-white {
+    background-color: #fff;
 }
 h1,h2,h3 {
     font-weight: bold;
@@ -118,29 +123,24 @@ h1 {
     display: flex;
     align-items: center;
 }
-.icons-block-container{
-    display: flex;
-    align-items: center; 
-    justify-content: space-around;
-    width: 100%;
-}
-.page-icon-block {
-    position: relative;
-    margin: 5px 0;
-    width: 150px;
-    height: 150px;
-}
+/* ICONS */
 .icon-item {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    width: 100px;
-    height: 100px;
-    text-align: center;
+    transition: 0.3s ease-in-out;
+    padding: 15px 0;
 }
-.icon-item .fab {
+.icon-item:hover {
+    box-shadow: 0 0 15px #999;
+}
+.icon-container a {
+    flex-basis: 30%;
+    text-decoration: none;
+}
+ .icon-container {
+    justify-content: space-between  ;
+    text-align: center;
+    padding-top: 10px;
     width: 100%;
-    transition: 0.3s ease-in;
+    display: flex;
 }
 /* SKILS SECTION */
 .container-page {
@@ -180,19 +180,6 @@ h1 {
 .intrest-section .right-side h3{
     width: 100%;
 }
-/* CONTACT */
-.contact-item {
-    background-color: #fff;
-    flex-basis: 30%;
-    padding: 15px 0;
-}
-.contact-section .contact-container {
-    justify-content: space-between  ;
-    text-align: center;
-    padding-top: 10px;
-    width: 100%;
-    display: flex;
-}
 /* FORM */
 .contact-section form {
     width: 50%;
@@ -200,29 +187,30 @@ h1 {
     display: flex;
     flex-direction: column;
 }
-.contact-section input {
+.contact-section input,
+.contact-section textarea{
+    color: #707070;
     font-family: 'Lato', sans-serif;
     border: 1px solid #ddd;
     padding: 10px;
-    height: 55px;
     margin: 15px 0;
     width: 100%;
     transition: 0.3s ease-in-out;
+}
+.contact-section input {
+    height: 55px;
 }
 .contact-section input:focus, 
 .contact-section textarea:focus {
     box-shadow: 0 0 5px #754ef9;
 }
 .contact-section textarea {
-    font-family: 'Lato', sans-serif;
-    border: 1px solid #ddd;
-    padding: 10px;
     height: 100px;
-    margin: 15px 0;
-    width: 100%;
-    transition: 0.3s ease-in-out;
 }
 .contact-section button {
+    font-size: 15px;
+    font-weight: 700;
+    border: 0px;
     font-family: 'Lato', sans-serif;
     width: 30%;
     height: 40px;
@@ -232,11 +220,8 @@ h1 {
     transition: 0.3s ease-in;
 }
 .contact-section button:hover {
-    width: 30%;
-    height: 40px;
-    color: #fff;
-    border-radius: 12px;
     background-color: #32333c;
+    box-shadow: 0 0 15px #754ef9;
 }
 /* FOOTER */
 .footer-inner {

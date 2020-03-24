@@ -31,10 +31,10 @@
         <div class="nav-container">
             <h2>potrfolio</h2>
             <ul class="nav-list">
-                <li class="nav-items"><a href="about" class="violet-color">o mnie</a></li>
-                <li class="nav-items"><a href="skils" class="violet-color">umiejetnosci</a></li>
-                <li class="nav-items"><a href="" class="violet-color">zaineresowania</a></li>
-                <li class="nav-items"><a href="" class="violet-color">kontakt</a></li>
+                <li class="nav-items"><a href="#about" class="violet-color">o mnie</a></li>
+                <li class="nav-items"><a href="#skils" class="violet-color">umiejetnosci</a></li>
+                <li class="nav-items"><a href="#intrest" class="violet-color">zaineresowania</a></li>
+                <li class="nav-items"><a href="#contact" class="violet-color">kontakt</a></li>
             </ul>
         </div>
     </nav>
@@ -56,31 +56,25 @@
             </div>
             <div class="down-side">
                 <h3>moje strony</h3>
-                <div class="icons-block-container">
-                    <div class="page-icon-block bg-lite-gray">
-                        <a href="">
-                            <div class="icon-item">
-                                <i class="fab fa-3x fa-git violet-color"></i>
-                                <p class="ligray-color">Moje repozytorium</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="page-icon-block bg-lite-gray">
-                        <a href="">
-                            <div class="icon-item">
-                                <i class="fab fa-3x fa-bootstrap violet-color"></i>
-                                <p class="ligray-color">Strona Bootstrap</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="page-icon-block bg-lite-gray">
-                        <a href="">
-                            <div class="icon-item">
-                                <i class="fab fa-3x fa-react violet-color"></i>
-                                <p class="ligray-color">Strona React</p>
-                            </div>
-                        </a>
-                    </div>
+                <!-- ICONS -->
+                <div class="icon-container">
+                    <a href="#" class="bg-lite-gray">
+                        <div class="icon-item">
+                            <i class="fab fa-4x fa-git violet-color"></i>
+                            <h4 class="ligray-color">Moje repozytorium</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-lite-gray">
+                        <div class="icon-item">
+                            <i class="fab fa-4x fa-bootstrap violet-color"></i>
+                            <h4 class="ligray-color">Strona Bootstrap</h4>
+                        </div>
+                    </a><a href="#" class="bg-lite-gray">
+                        <div class="icon-item">
+                            <i class="fab fa-4x fa-react violet-color"></i>
+                            <h4 class="ligray-color">Strona React</h4>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -177,22 +171,28 @@
     <section id="contact" class="contact-section bg-lite-gray">
         <div class="container-page">
             <h2>kontakt</h2>
-            <div class="contact-container">
-                <div class="contact-item">
-                    <i class="fab fa-3x violet-color fa-linkedin"></i>
-                    <h3>LinkedIn</h3>
-                    <p class="ligray-color">Dawid Kotyrba</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-3x violet-color fa-phone-alt"></i>
-                    <h3>Telefon</h3>
-                    <p class="ligray-color">+48 533 596 288</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-3x violet-color fa-envelope"></i>
-                    <h3>E-Mail</h3>
-                    <p class="ligray-color">dawid.kotyrba@interia.pl</p>
-                </div>
+            <!-- ICONS -->
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/dawid-kotyrba-6b07001a3/" class="bg-white">
+                    <div class="icon-item">
+                        <i class="fab fa-3x violet-color fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p class="ligray-color">Dawid Kotyrba</p>
+                    </div>
+                </a>
+                <a href="tel: +48533596288" class="bg-white">
+                    <div class="icon-item">
+                        <i class="fas fa-3x violet-color fa-phone-alt"></i>
+                        <h3>Telefon</h3>
+                        <p class="ligray-color">+48 533 596 288</p>
+                    </div>
+                </a><a href="mailto:dawid.kotyrba@interia.pl" class="bg-white">
+                    <div class="icon-item">
+                        <i class="fas fa-3x violet-color fa-envelope"></i>
+                        <h3>E-Mail</h3>
+                        <p class="ligray-color">dawid.kotyrba@interia.pl</p>
+                    </div>
+                </a>
             </div>
             <form>
                 <input type="text" placeholder="Wpisz imię">
