@@ -63,12 +63,12 @@ h1 {
 .main-header .half-container .right-side {
     padding: 0;
     flex-basis: 50%;
-    background-image: linear-gradient(to left, rgba(255,0,0,0), #754ef9);
     top: 20px;
     position: relative;
 }
 .right-side img{
     width: 400px;
+    box-shadow: 7px 7px 20px 0px;
 }
 
 
@@ -146,31 +146,49 @@ h1 {
     display: flex;
 }
 /* SKILS SECTION */
-.container-page {
+.skils-article{
+    background-color: #fff;
+    margin: 30px 0;
+    transition: 0.3s ease-in-out;
+}
+.skils-article:hover {
+    box-shadow: 0 0 15px;
+}
+.skils-article:hover > .article-box .article-description ul li{
+    margin: 15px 0; 
+    width: 100%;
+}
+.article-box {
+    height: 100%;
+    display: flex;
+}
+.article-title {
+    height:  100%;
+    flex-basis: 30%;
+}
+.article-title h3 {
+    line-height: 70px;
+    margin: 0;
+}
+.article-description {
+    flex-basis: 70%;
+}
+.article-description ul {
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
-.galery-item {
-    height: 300px;
-    flex-basis: 25%;
-    position: relative;
+.article-description ul li{
+    margin: 0 15px;
+    line-height: 100%;
 }
-.galery-item h3{
-    background-color: #754ef9;
-    color: #fff;
+.article-description p {
     margin: 0;
-    line-height: 300px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-}
-.galery-item img {
-    width: 100%;
-}
-.galery-item:hover > h3 {
-    opacity: 0.9;
+    line-height: 70px;
 }
 /* INTREST SECTION */
 .intrest-section img {
