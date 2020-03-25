@@ -61,11 +61,14 @@ h1 {
     
 }
 .main-header .half-container .right-side {
+    padding: 0;
     flex-basis: 50%;
     background-image: linear-gradient(to left, rgba(255,0,0,0), #754ef9);
+    top: 20px;
+    position: relative;
 }
 .right-side img{
-    width: 426px;
+    width: 400px;
 }
 
 
@@ -242,11 +245,3 @@ h1 {
     color: #fff;
     line-height: 20vh;
 }
-
-/* 
-.hide-decr {
-    flex-basis: 30%;
-}
-.fle-bas {
-    flex-basis: 70%;
-} */

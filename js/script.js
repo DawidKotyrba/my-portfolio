@@ -30,22 +30,19 @@ $(function () {
     const imgWidth = $('#left img').width();
 
     photo2.on('mouseover', () => {
-        $('#left').animate({ right: imgWidth * 1.25 - leftWidth }, 500);
+        $('#left').animate({ right: imgWidth * 1.25 - leftWidth });
         photo2.animate({
             width: 125 + '%',
-        }, 500);
+        });
         desc2.hide(300);
     });
     photo2.on('mouseout', () => {
-        $('#left').animate({ right: 0 }, 500);
+        $('#left').animate({ right: 0 });
         photo2.animate({
             width: 100 + '%',
-        }, 500);
+        });
         desc2.show(300);
     });
 
-    $('#submit-button').on('click', e => {
-        e.preventdefault();
-    });
-
+    $('#submit-button').prop('disabled', true);
 });
