@@ -173,12 +173,19 @@ h1 {
 .intrest-section img {
     width: 100%;
 }
-.intrest-section .right-side {
-    flex-basis: 50%;
+.intrest-section .left-side {
+    width: 50%;
+    position: relative;
+}
+.right-side {
+    width: 50%;
     padding: 0 20px;
 }
 .intrest-section .right-side h3{
     width: 100%;
+}
+.down-article {
+    flex-direction: row-reverse;
 }
 /* FORM */
 .contact-section form {
@@ -235,3 +242,11 @@ h1 {
     color: #fff;
     line-height: 20vh;
 }
+
+/* 
+.hide-decr {
+    flex-basis: 30%;
+}
+.fle-bas {
+    flex-basis: 70%;
+} */

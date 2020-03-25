@@ -140,9 +140,9 @@
             <div class="container-page">
                 <div class="half-container">
                     <div class="left-side">
-                        <img src="img/mountains.jpg" alt="mountains">
+                        <img id="photo1-hobby" src="img/mountains.jpg" alt="mountains">
                     </div>
-                    <div class="right-side">
+                    <div id="hobby1-desc" class="right-side">
                         <h3>spacery górskie</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, id at neque voluptate
                             blanditiis ex? Quibusdam quos tempora, nostrum corporis, id eum aliquam eos explicabo
@@ -153,16 +153,18 @@
         </article>
         <article class="atricle-item">
             <div class="container-page">
-                <div class="half-container">
-                    <div class="right-side">
+                <div class="half-container down-article">
+                    <div id="left" class="left-side">
+                        <img id="photo2-hobby" src="img/paraglider.jpg" alt="paraglider">
+                    </div>
+                    <div id="hobby2-desc" class="right-side">
                         <h3>paralotniarstwo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, id at neque voluptate
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, id at neque
+                            voluptate
                             blanditiis ex? Quibusdam quos tempora, nostrum corporis, id eum aliquam eos explicabo
                             dolorum, nesciunt distinctio laudantium quaerat?</p>
                     </div>
-                    <div class="left-side">
-                        <img src="img/paraglider.jpg" alt="paraglider">
-                    </div>
+
                 </div>
             </div>
         </article>
@@ -198,7 +200,7 @@
                 <input type="text" placeholder="Wpisz imię">
                 <input type="email" placeholder="Wpisz E-mail">
                 <textarea placeholder="Zostaw wiadomość"></textarea>
-                <button>Wyjślij</button>
+                <button id="submit-button">Wyjślij</button>
             </form>
         </div>
     </section>
@@ -207,7 +209,8 @@
         <p>Copywrite &copy; 2020</p>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
