@@ -154,10 +154,6 @@ h1 {
 .skils-article:hover {
     box-shadow: 0 0 15px;
 }
-.skils-article:hover > .article-box .article-description ul li{
-    margin: 15px 0; 
-    width: 100%;
-}
 .article-box {
     height: 100%;
     display: flex;
