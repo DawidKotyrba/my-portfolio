@@ -3,16 +3,39 @@ $(function () {
         let position = $($(this).attr("href")).offset().top;
         $("body, html").animate({
             scrollTop: position
-        });
+        }, 1000);
     });
 
     const photo1 = $('#photo1-hobby');
     const desc1 = $('#hobby1-desc');
     const photo2 = $('#photo2-hobby');
     const desc2 = $('#hobby2-desc');
+    const leftWidth = $('#left').width();
+    const imgWidth = $('#left img').width();
+    let windowWidth = $(window).width();
 
+    $(window).resize(() => {
+        let newWindowWidth = $(window).width();
+        hide(newWindowWidth);
+    });
+
+    let hide = widthWin => {
+
+        if (widthWin <= 1158) {
+            console.log('ok ' + widthWin);
+            $('body #nav-link').on('click ', () => {
+                $('.nav-list-holder').hide(200)
+            });
+        } else {
+            console.log('poka ' + widthWin);
+            $('.nav-list-holder').show(1)
+        };
+
+    };
+    hide;
 
     photo1.on('mouseover', () => {
+
         photo1.animate({
             width: 125 + '%'
         });
@@ -24,10 +47,6 @@ $(function () {
         });
         desc1.show(500);
     });
-
-
-    const leftWidth = $('#left').width();
-    const imgWidth = $('#left img').width();
 
     photo2.on('mouseover', () => {
         $('#left').animate({ right: imgWidth * 1.25 - leftWidth });
@@ -47,6 +66,6 @@ $(function () {
     $('#submit-button').prop('disabled', true);
 
     $('label').on('click', () => {
-        $('.nav-list-holder').toggle('slow')
-    })
+        $('.nav-list-holder').toggle('smooth');
+    });
 });

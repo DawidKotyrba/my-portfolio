@@ -6,6 +6,7 @@
         margin: 0;
     }
     .nav-list-holder {
+        order: 3;
         width: 100%;
         display: none;
     }
@@ -32,6 +33,9 @@
     }
 }
 @media all and (max-width:765px){
+    section {
+        padding: 30px 0;
+    }
     .main-header .half-container {
         flex-wrap: wrap;
     }
@@ -66,6 +70,9 @@
     }
     label {
         flex-basis: 59%;
+    }
+    .about-section h3 {
+        margin-top: 25px;
     }
     .article-mobile-box {
     display: flex;
