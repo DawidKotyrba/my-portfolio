@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsible.css">
     <title>Portfolio</title>
 </head>
 
@@ -30,12 +31,16 @@
     <nav class="main-nav">
         <div class="nav-container">
             <h2>potrfolio</h2>
-            <ul class="nav-list">
-                <li class="nav-items"><a href="#about" class="violet-color">o mnie</a></li>
-                <li class="nav-items"><a href="#skils" class="violet-color">umiejetnosci</a></li>
-                <li class="nav-items"><a href="#intrest" class="violet-color">zaineresowania</a></li>
-                <li class="nav-items"><a href="#contact" class="violet-color">kontakt</a></li>
-            </ul>
+            <input type="checkbox" id="burger">
+            <label for="burger">MENU <i class="fas fa-bars"></i></label>
+            <div class="nav-list-holder">
+                <ul class="nav-list">
+                    <li class="nav-items mob-left-side"><a href="#about" class="violet-color">o mnie</a></li>
+                    <li class="nav-items mob-left-side"><a href="#skils" class="violet-color">umiejetnosci</a></li>
+                    <li class="nav-items mob-right-side"><a href="#intrest" class="violet-color">zaineresowania</a></li>
+                    <li class="nav-items mob-right-side"><a href="#contact" class="violet-color">kontakt</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- SECTION ABOUT -->
@@ -44,6 +49,7 @@
             <h2>o mnie</h2>
             <div class="up-side">
                 <p class="ligray-color">
+                    <img class="my-photo" src="img/my-photo.jpg" alt="my-photo">
                     Jestem początkującym programistą Front-End potrafiącym logicznie myśleć. Podczas dwu
                     miesięcznego kursu w Akademii108 nauczyłem się wielu przydatnych rzeczy takich jak: HTML5,
                     CSS3,
@@ -83,52 +89,53 @@
     <section id="skils" class="skils-section bg-lite-gray">
         <div class="container-page">
             <h2>umiejętności</h2>
-            <article id="article-skils" class="skils-article">
-                <div class="article-box">
-                    <div class="article-title">
-                        <h3>Znajomość języków</h3>
+            <div class="article-mobile-box">
+                <article id="article-skils" class="skils-article">
+                    <div class="article-box">
+                        <div class="article-title">
+                            <h3>Znajomość języków</h3>
+                        </div>
+                        <div class="article-description">
+                            <ul id="article-list">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="article-description">
-                        <ul id="article-list">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                        </ul>
+                </article>
+                <article id="article-skils" class="skils-article">
+                    <div class="article-box">
+                        <div class="article-title">
+                            <h3>Znajomość bibliotek</h3>
+                        </div>
+                        <div class="article-description">
+                            <ul id="article-list">
+                                <li>jQuery</li>
+                                <li>React.JS</li>
+                                <li>Bootstrap</li>
+                                <li>Sass</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article id="article-skils" class="skils-article">
-                <div class="article-box">
-                    <div class="article-title">
-                        <h3>Znajomość bibliotek</h3>
+                </article>
+                <article id="article-skils" class="skils-article">
+                    <div class="article-box">
+                        <div class="article-title">
+                            <h3>Znajomość technologi</h3>
+                        </div>
+                        <div class="article-description">
+                            <ul id="article-list">
+                                <li>RWD</li>
+                                <li>GIT</li>
+                                <li>Gulp</li>
+                                <li>AJAX</li>
+                                <li>WordPress</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="article-description">
-                        <ul id="article-list">
-                            <li>jQuery</li>
-                            <li>React.JS</li>
-                            <li>Bootstrap</li>
-                            <li>Sass</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-            <article id="article-skils" class="skils-article">
-                <div class="article-box">
-                    <div class="article-title">
-                        <h3>Znajomość technologi</h3>
-                    </div>
-                    <div class="article-description">
-                        <ul id="article-list">
-                            <li>RWD</li>
-                            <li>GIT</li>
-                            <li>Gulp</li>
-                            <li>AJAX</li>
-                            <li>WordPress</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-
+                </article>
+            </div>
         </div>
     </section>
     <!-- INTREST SECTION -->

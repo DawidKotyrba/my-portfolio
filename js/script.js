@@ -46,18 +46,7 @@ $(function () {
 
     $('#submit-button').prop('disabled', true);
 
-    // const articleSkils = $('body #article-skils');
-    // const articleList = $('body #article-list');
-    // const articleListItem = $('body #article-list li');
-
-    // articleSkils.on('mouseover', () => {
-    //     articleListItem.css({
-    //         margin: 0,
-    //         marginTop: 15,
-    //         marginBottom: 15
-    //     })
-    //     articleListItem.animate({
-    //         width: 100 + '%'
-    //     })
-    // });
+    $('label').on('click', () => {
+        $('.nav-list-holder').toggle('slow')
+    })
 });

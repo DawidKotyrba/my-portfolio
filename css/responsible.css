@@ -1,0 +1,184 @@
+@media all and (max-width:1158px){
+    .right-side img {
+        width: 300px;
+    }
+    .main-nav h2{
+        margin: 0;
+    }
+    .nav-list-holder {
+        width: 100%;
+        display: none;
+    }
+    label {
+        display: block;
+    }
+    input:checked + .nav-list-holder {
+        display: block;
+    }
+}
+@media all and (max-width:956px){
+    .article-title{
+        flex-basis: 30%;
+    }
+    .article-title h3 {
+        line-height: 100%;
+        margin: 15px 0px;
+    }
+    .main-header {
+        height: 80vh;
+    }
+    .right-side img {
+        width: 250px;
+    }
+}
+@media all and (max-width:765px){
+    .main-header .half-container {
+        flex-wrap: wrap;
+    }
+    .main-header .left-side {
+        flex-basis: 100%;
+    }
+    .main-header .right-side  {
+        display: none;
+    }
+    
+    .my-photo {
+        display: block;
+        width: 35%;
+        float: left;
+        margin-right: 5px;
+    }
+    .up-side p {
+        margin: 0;
+    }
+    .nav-list{
+        margin: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .nav-items{
+        margin: 5px 0;
+        text-align: end;
+        flex-basis: 50%;
+    }
+    .nav-items a {
+        padding: 0;
+    }
+    label {
+        flex-basis: 59%;
+    }
+    .article-mobile-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .skils-article {
+        flex-basis: 45%;
+        margin: 20px auto;
+    }
+    .article-title h3 {
+        padding: 10px;
+    }
+    .article-box {
+        height: auto;
+        flex-direction: column;
+    }
+    .article-description ul {
+        padding: 0;
+    }
+    .article-description ul li {
+        text-align: center;
+        width: 100%;
+        margin: 15px 0;
+    }
+    .intrest-section .half-container{
+        flex-wrap: wrap;
+    }
+    .intrest-section .half-container .left-side,
+    .intrest-section .half-container .right-side {
+        flex-basis: 100%;
+        padding: 0;
+    }
+    .contact-section .icon-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact-section .icon-container a {
+        flex-basis: 45%;
+        margin: 15px auto;
+    }
+    .contact-section button {
+        width: 100%;
+    }
+}
+@media all and (max-width:480px){
+    .main-nav h2,
+    label {
+        flex-basis: 100%;
+    }
+    label {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .my-photo {
+        width: 50%;
+    }
+    .skils-article {
+        flex-basis: 75%;
+    }
+    .about-section .icon-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-section .icon-container a {
+        flex-basis: 75%;
+        margin: 15px 0;
+    }
+    .about-section .icon-container h4,
+    .contact-section h3,
+    .contact-section p {
+        margin: 10px 0;
+    }
+    .about-section .icon-container .fab,
+    .contact-section i {
+        font-size: 40px;
+    }
+    .contact-section form {
+        width: 100%;
+    }
+    .contact-section .icon-container a {
+        flex-basis: 75%;
+    }
+    
+}
+@media all and (max-width:340px){   
+    .main-header {
+        height: 60vh;
+    }
+    .nav-container {
+        padding: 15px 0;
+    }
+    .nav-items a {
+        font-size: 10px;
+    }
+    .my-photo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .about-section .icon-container a,
+    .contact-section .icon-container a {
+        flex-basis: 100%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
