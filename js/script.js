@@ -32,7 +32,7 @@ $(function () {
         };
 
     };
-    hide;
+    hide(windowWidth);
 
     photo1.on('mouseover', () => {
 
