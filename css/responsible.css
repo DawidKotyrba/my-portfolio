@@ -33,9 +33,6 @@
     }
 }
 @media all and (max-width:765px){
-    section {
-        padding: 30px 0;
-    }
     .main-header .half-container {
         flex-wrap: wrap;
     }
