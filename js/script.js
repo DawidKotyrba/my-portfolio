@@ -14,25 +14,28 @@ $(function () {
     const imgWidth = $('#left img').width();
     let windowWidth = $(window).width();
 
-    $(window).resize(() => {
-        let newWindowWidth = $(window).width();
-        hide(newWindowWidth);
-    });
+
 
     let hide = widthWin => {
 
         if (widthWin <= 1158) {
             console.log('ok ' + widthWin);
-            $('body #nav-link').on('click ', () => {
+            $('body .nav-items').on('click ', () => {
                 $('.nav-list-holder').hide(200)
             });
         } else {
             console.log('poka ' + widthWin);
-            $('.nav-list-holder').show(1)
+            $('.nav-list-holder').show()
         };
 
     };
+
     hide(windowWidth);
+
+    $(window).resize(() => {
+        let newWindowWidth = $(window).width();
+        hide(newWindowWidth);
+    });
 
     photo1.on('mouseover', () => {
 
