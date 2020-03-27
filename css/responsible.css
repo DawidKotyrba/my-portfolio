@@ -18,6 +18,13 @@
     }
 }
 @media all and (max-width:956px){
+    .icon-container {
+        flex-wrap: wrap;
+    }
+    .icon-container a {
+        margin-top: 15px;
+        flex-basis: 45%;
+    }
     .article-title{
         flex-basis: 30%;
     }
