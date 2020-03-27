@@ -37,34 +37,37 @@ $(function () {
         hide(newWindowWidth);
     });
 
-    photo1.on('mouseover', () => {
+    if (windowWidth >= 1280) {
 
-        photo1.animate({
-            width: 125 + '%'
-        });
-        desc1.hide(300);
-    });
-    photo1.on('mouseout', () => {
-        photo1.animate({
-            width: 100 + '%'
-        });
-        desc1.show(500);
-    });
+        photo1.on('mouseover', () => {
 
-    photo2.on('mouseover', () => {
-        $('#left').animate({ right: imgWidth * 1.25 - leftWidth });
-        photo2.animate({
-            width: 125 + '%',
+            photo1.animate({
+                width: 125 + '%'
+            });
+            desc1.hide(300);
         });
-        desc2.hide(300);
-    });
-    photo2.on('mouseout', () => {
-        $('#left').animate({ right: 0 });
-        photo2.animate({
-            width: 100 + '%',
+        photo1.on('mouseout', () => {
+            photo1.animate({
+                width: 100 + '%'
+            });
+            desc1.show(500);
         });
-        desc2.show(300);
-    });
+
+        photo2.on('mouseover', () => {
+            $('#left').animate({ right: imgWidth * 1.25 - leftWidth });
+            photo2.animate({
+                width: 125 + '%',
+            });
+            desc2.hide(300);
+        });
+        photo2.on('mouseout', () => {
+            $('#left').animate({ right: 0 });
+            photo2.animate({
+                width: 100 + '%',
+            });
+            desc2.show(300);
+        });
+    };
 
     $('#submit-button').prop('disabled', true);
 
